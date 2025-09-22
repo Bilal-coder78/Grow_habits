@@ -5,3 +5,24 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --bg: #F6FDFF;
+  /* sky blue */
+  --primary-500: #3DBEFF;
+  /* green */
+  --accent-500: #61D095;
+  /* orange */
+  --warm-500: #FF914D;
+  --sun-500: #FFD93D;
+  --muted: #6E7F8B;
+  --text: #0B2938;
+  --btn-linear: linear-gradient(90deg, var(--primary-500), var(--accent-500));
+}
+
+body{
+  background: rgb(216, 243, 247);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}

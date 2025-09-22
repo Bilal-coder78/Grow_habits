@@ -1,0 +1,8 @@
+.li-items:hover{
+    background: var(--bg);
+    color: black;
+}
+
+.li-items{
+    transition: all 0.3s;
+}

@@ -26,3 +26,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   color: var(--text);
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}

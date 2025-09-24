@@ -10,9 +10,10 @@ function Nav() {
             <div class="d-flex justify-content-between align-items-center mt-2">
                 <div class="d-flex align-items-center">
                     <div class="py-2 px-3 rounded-3 fs-4 fw-bold text-white d-flex justify-content-center align-items-center" style={{ background: "linear-gradient(135deg, var(--primary-500), var(--warm-500))" }}>G</div>
-                    <div class="content ms-2">
+                    <div class="ms-2">
                         <h1 className='fs-5 m-0'>GrowHabits</h1>
                         <div className='small text-muted d-lg-block d-none'>Grow healthy • Be kind • Learn daily</div>
+                        <div className='small text-muted d-lg-none'>Grow healthy</div>
                     </div>
                 </div>
                 <div class="nav-items">

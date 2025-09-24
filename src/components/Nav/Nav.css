@@ -6,3 +6,79 @@
 .li-items{
     transition: all 0.3s;
 }
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    display: none;
+    z-index: 12;
+}
+
+.ham2 {
+    width: 45px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+.active-ham .ham2:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 12px;
+}
+
+.active-ham .ham2:nth-child(2) {
+    opacity: 0;
+}
+
+.active-ham .ham2:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+}
+
+.mobile {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    background: white;
+    transform: translateY(-180%);
+    width: auto;
+    height: auto;
+    /* gap: 40px; */
+    display: none;
+    transition: all 0.3s;
+    z-index: 9;
+}
+
+.active-mobile {
+    transform: translateY(0);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3);
+    /* light overlay */
+    backdrop-filter: blur(8px);
+    z-index: 5;
+    display: none;
+    transition: all 0.3s;
+}
+
+.active-backdrop {
+    display: block;
+}
